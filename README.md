@@ -1,27 +1,67 @@
-# E-Shop 2.0
+# E-Shop
 
-E-Shop 2.0 is a modern, minimalistic e-commerce web application built with React and Vite. The project demonstrates a clean UI, responsive design, and essential shopping cart functionality.
+A modern e-commerce application built as part of the Project Odin curriculum. This project demonstrates proficiency in building full-featured React applications with routing, state management, and API integration.
+
+## Project Overview
+
+E-Shop is a functional e-commerce platform that fetches products from a third-party API and allows users to browse products and manage a shopping cart. The application features a clean, modern UI with responsive design and smooth user experience.
 
 ## Features
 
-- Product listing and detail pages
-- Add and remove items from the cart
-- Cart summary with total price calculation
-- Responsive layout for desktop and mobile
-- Modern UI using Tailwind CSS
+- **Product Browsing** – Display products from FakeStore API with detailed information
+- **Shopping Cart** – Add and remove products from cart with real-time updates
+- **Responsive Design** – Mobile-first approach with responsive grid layouts
+- **Client-Side Routing** – Navigate between Home, Products, and Cart pages seamlessly
+- **Modern UI** – Professional design with smooth transitions and hover effects
+- **Real API Integration** – Fetches live product data from FakeStore API
+
+## Technology Stack
+
+- **Frontend Framework:** React 19.2.0
+- **Build Tool:** Vite 7.3.1
+- **Routing:** React Router DOM 7.13.1
+- **HTTP Client:** Axios 1.13.6
+- **Styling:** Tailwind CSS 4.2.1
+- **Icons:** Lucide React 0.577.0
+- **Code Quality:** ESLint 9.39.1
+- **Plugin:** Vite React SWC 4.2.2 (for Fast Refresh)
+
+## Project Structure
+
+```
+e-shop_2.0/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx        # Navigation header with cart link
+│   │   ├── Footer.jsx        # Footer with shop info and newsletter
+│   │   ├── Hero.jsx          # Hero section for homepage
+│   │   └── Features.jsx      # Features section
+│   ├── pages/
+│   │   ├── Home.jsx          # Landing page with hero section
+│   │   ├── Products.jsx      # Product listing page with API integration
+│   │   └── Cart.jsx          # Shopping cart display
+│   ├── App.jsx               # Main app component with routing context
+│   ├── main.jsx              # Application entry point
+│   └── index.css             # Global styles
+├── public/                   # Static assets
+├── package.json              # Project dependencies
+├── vite.config.js            # Vite configuration
+├── eslint.config.js          # ESLint configuration
+└── README.md
+```
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v18 or newer recommended)
+- Node.js (v14 or higher)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/marek-milacek/Basic_Fake_e-shop.git
     cd e-shop_2.0
     ```
 2. Install dependencies:
@@ -36,18 +76,30 @@ E-Shop 2.0 is a modern, minimalistic e-commerce web application built with React
     # or
     yarn dev
     ```
-4. Open your browser at [http://localhost:5173](http://localhost:5173)
+    The application will be available at `http://localhost:5173`
 
-## Project Structure
+### Available Scripts
 
-- `src/components/` – Reusable UI components (Header, Footer, Hero, Features)
-- `src/pages/` – Main pages (Home, Products, Cart)
-- `src/` – App entry point and global styles
+- `npm run dev` – Start development server with HMR
+- `npm run build` – Build for production
+- `npm run preview` – Preview production build
+- `npm run lint` – Run ESLint to check code quality
 
-## Customization
+## Key Learning Outcomes
 
-You can easily extend the app by adding new products, pages, or features. The codebase is organized for clarity and scalability.
+This project demonstrates:
 
-## License
+- React Hooks (useState, useEffect) for state management
+- React Router DOM for client-side navigation
+- Context API for passing data between components
+- Axios for HTTP requests and API integration
+- Component composition and reusable components
+- Tailwind CSS for modern, responsive styling
+- Professional code organization and conventions
+- Working with third-party APIs (FakeStore API)
 
-This project is for educational and demonstration purposes.
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+Built for Project Odin
