@@ -95,7 +95,6 @@ This project demonstrates:
 - Axios for HTTP requests and API integration
 - Component composition and reusable components
 - Tailwind CSS for modern, responsive styling
-- Professional code organization and conventions
 - Working with third-party APIs (FakeStore API)
 
 ## 📝 License
